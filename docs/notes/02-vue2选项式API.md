@@ -8,8 +8,8 @@
 
 参考官网文档：https://cn.vuejs.org/guide/introduction.html#api-styles
 
-- 数据 放在 data() 方法中，使用 return 返回
-- 方法 放在 methods 对象中
+- 数据：放在 data() 方法中，使用 return 返回
+- 方法：放在 methods 对象中
 
 ```js
 <template>

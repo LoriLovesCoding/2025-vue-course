@@ -7,27 +7,24 @@
     <button @click="changeAge">修改年龄</button>
   </div>
 </template>
-<script>
-export default {
-  name: 'Person', // 组件名称
-  data() {
-    return {
-      name: '张三',
-      age: 30,
-      tel: 13812345600,
-    }
-  },
-  methods: {
-    showTel() {
-      alert(this.tel);
-    },  // 每个方法之间使用 逗号 隔开
-    changeName() {
-      this.name = '李四'; // 是响应式的，修改后立刻体现
-    },
-    changeAge() {
-      this.age += 1;
-    }
-  }
+
+<script setup>
+import { ref } from 'vue';
+// 数据
+let name = ref('张三');
+let age = ref(18);
+let telephone = '15012346868'
+
+// 方法
+function showTel() {
+  alert(telephone);
+}
+function changeName() {
+  name.value = '张三三'; // 这样直接赋值，不是响应式的
+}
+
+function changeAge() {
+  age.value += 1;
 }
 </script>
 <style scoped>
