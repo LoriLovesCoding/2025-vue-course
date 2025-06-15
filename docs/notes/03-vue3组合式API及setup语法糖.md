@@ -1,4 +1,4 @@
-## VUE3 组合式 API Composition API
+## VUE3 组合式 API (Composition API)
 
 组合式 API 通常会与 `<script setup>`
 
@@ -59,7 +59,7 @@ export default {
 
 ## setup 语法糖
 
-setup() 函数可以简写成 `<script setup>`
+`setup()` 函数可以简写成 `<script setup>`
 
 ```js
 <script>
