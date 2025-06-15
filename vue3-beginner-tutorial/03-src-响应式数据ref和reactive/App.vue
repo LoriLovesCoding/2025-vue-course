@@ -1,5 +1,5 @@
 <template>
-  <router-view></router-view>
+  <Person />
 </template>
 
 <script>
@@ -9,13 +9,3 @@ export default {
   components: { Person }, // 注册Person组件
 }
 </script>
-
-<style>
-/* 全局样式 */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f4ff;
-}
-</style>
