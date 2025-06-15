@@ -19,6 +19,7 @@
         </div>
 
         <button type="submit" class="login-button">登录</button>
+        <el-button type="primary">Primary</el-button>
         <p class="error-message" v-if="errorMsg">{{ errorMsg }}</p>
       </form>
     </div>

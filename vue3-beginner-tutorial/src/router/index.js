@@ -14,7 +14,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.requireAuth && !isAuthenticated) {
     next({ name: 'login' })
   } else {
-    next()
+    next() //放行路由
   }
 })
 
